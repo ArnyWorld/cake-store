@@ -917,6 +917,11 @@ body {
   width: 400px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .specialContainer__form {
+    width: 100%;
+  }
+}
 .specialContainer__message {
   padding: 1rem;
   border: none;
