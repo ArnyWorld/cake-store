@@ -1,0 +1,10 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.mainShop{
+    &__title{
+        @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, left);
+        margin-bottom: 2rem;
+    }
+}

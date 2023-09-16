@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arnaldo Muñoz" />
+    <meta name="keywords" content="HTML, CSS, SASS, JS" />
+    <title>Exquissitoo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+    <!--Preload-->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      as="font"
+      crossorigin
+    />
+    <link rel="preload" href="./build/css/app.css" as="style" />
+    <!--Prefetch-->
+    <link rel="prefetch" href="index.html" as="document" />
+    <link rel="prefetch" href="shop.html" as="document" />
+  </head>
+  <body>
+    <header class="header headerContact">
+      <div class="header__container">
+        <nav class="navigation">
+          <div class="navigation__logo">
+            <a href="index.html" class="linkLogo">
+              <img
+                src="./build/img/logoWhite-min.png"
+                class="linkLogo__image"
+                alt="Logo Cake Store"
+              />
+              Exquissitoo
+            </a>
+          </div>
+          <i class="fa-solid fa-bars-staggered navigation__icon"></i>
+          <div class="navigation__group">
+            <ul class="navigation__links">
+              <li class="navigation__list">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__list">
+                <a href="shop.html" class="navigation__link">Shop</a>
+              </li>
+              <li class="navigation__list">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__list">
+                <a
+                  href="contact.html"
+                  class="navigation__link navigation__link--active"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="navigation__networks">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__content">
+          <div class="header__description">
+            <h3 class="header__text">Welcome to</h3>
+            <h1 class="header__title">Contact</h1>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </header>
+
+    <main class="mainContact">
+      <div class="container">
+        <h2 class="mainContact__title">Visit Us</h2>
+        <div class="container contactContainer">
+          <div class="contactContainer__details">
+            <h3 class="contactContainer__title">Central Office</h3>
+            <p class="contactContainer__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+              dolorum similique doloremque adipisci ad qui minus sapiente nemo
+              reprehenderit ab. Rerum sit ducimus, facere architecto earum sunt
+              nisi facilis fugit?
+            </p>
+            <p class="contactContainer__text">
+              <i class="fa-solid fa-phone"></i> (406) 555-0120
+            </p>
+            <p class="contactContainer__text">
+              <i class="fa-solid fa-globe"></i> cakestore.com
+            </p>
+            <p class="contactContainer__text">
+              <i class="fa-solid fa-location-dot"></i> 2118 Thornridge Cir.
+              Syracuse, Connecticut 35624
+            </p>
+          </div>
+          <div class="contactContainer__details">
+            <h3 class="contactContainer__title">Attentions Hours</h3>
+            <table>
+              <tr>
+                <th>Monday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Tuesday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Wednesday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Thursday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Friday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Saturday:</th>
+                <td>09:00 - 19:00</td>
+              </tr>
+              <tr>
+                <th>Sunday:</th>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+          <div class="contactContainer__details">
+            <form action="" class="formContact">
+              <div class="formContact__formControl">
+                <label for="name" class="formContact__label">Your Name</label>
+                <input type="text" id="name" class="formContact__input" />
+              </div>
+              <div class="formContact__formControl">
+                <label for="email" class="formContact__label">Your Name</label>
+                <input type="email" id="email" class="formContact__input" />
+              </div>
+              <div class="formContact__formControl">
+                <label for="subject" class="formContact__label">Subject</label>
+                <input type="text" id="subject" class="formContact__input" />
+              </div>
+              <div class="formContact__formControl">
+                <label for="message" class="formContact__label"
+                  >Your Message</label
+                >
+                <textarea
+                  name=""
+                  id="message"
+                  class="formContact__input"
+                  rows="10"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                class="formContact__button"
+                value="Show now"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.6903498054985!2d-68.1563090492053!3d-16.491209688565576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edff34b430f09%3A0xbe3ba7d371260aff!2sExquissitoo!5e0!3m2!1ses!2sbo!4v1679694841796!5m2!1ses!2sbo"
+        width="100%"
+        height="650"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerContainer">
+        <p class="copy">Exquissitoo copyright - 2023</p>
+        <nav class="footerNav">
+          <a href="index.html" class="footerNav__link">Home</a>
+          <a href="shop.html" class="footerNav__link">Shop</a>
+          <a href="about.html" class="footerNav__link">About</a>
+          <a href="contact.html" class="footerNav__link">Contact</a>
+        </nav>
+        <div class="footer__networks">
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="./build/js/global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+// parallax Orders
+.ordersParallax{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/parallaxOrders.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 7rem 0;
+    margin-bottom: 2rem;
+    .orders{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include mixin.mediumDevice{
+            flex-direction: column;
+        }
+        &__description{
+            margin-bottom: 2rem;
+        }
+        &__title{
+            @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, left);
+            margin-bottom: 1.2rem;
+            text-transform: uppercase; 
+        }
+        &__text{
+            @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+        }
+        &__form{
+            background-color: var.$colorLight;
+            padding: 0.1rem;
+            display: flex;
+            align-items: center;
+            @include mixin.littleDevice{
+                width: 100%;
+            }   
+        }
+        &__message{
+            padding: 1rem;
+            width: 400px;
+            border: none;
+        }
+        &__link{
+            padding: 0.8rem;
+            background-color: var.$colorDark;
+            color: var.$colorLight;
+            i{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.storesContainer{
+    margin-bottom: 2.5rem;
+    display: grid;
+    // justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    @include mixin.mediumDevice{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mixin.littleDevice{
+        grid-template-columns:1fr;
+        justify-items: center;
+    }
+    &__store{
+        position: relative;
+        @include mixin.mediumDevice{
+            margin-bottom: 2.5rem;
+        }   
+        
+        &::after{
+            content:'';
+            position: absolute;
+            bottom: -10px;
+            width: 50%;
+            height: 6px;
+            background-color: var.$colorPrimary;
+        }
+    }
+    
+    &__title{
+        @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, left);
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+    &__text{
+        @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+        line-height: 2;
+    }
+}

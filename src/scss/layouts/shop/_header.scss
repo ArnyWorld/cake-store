@@ -1,0 +1,18 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+/***SHOP***/
+.headerShop{
+    @include mixin.background(url(../img/Banner4-min.jpg), 70vh);
+    margin-bottom:2.5rem;
+    background-position: bottom;
+        @include mixin.littleDevice{
+            background-position: right center;
+        }
+    .header__content{
+        @include mixin.littleDevice{
+            align-items:center;
+        }
+    }
+}

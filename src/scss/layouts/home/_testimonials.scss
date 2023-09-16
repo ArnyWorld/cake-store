@@ -1,0 +1,52 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.testimonialsParallax{
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../img/parallaxTestimonial.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 4rem 0;
+
+    .subtitle{
+        margin-bottom: 3rem;
+    }
+
+    .testimonial{
+        
+        &__user{
+            width: 45%!important;
+            background-color: var.$colorDark2;
+            display: flex;
+            margin-right: 4rem;
+            @include mixin.mediumDevice{
+                width: 80%!important;                
+            }
+        }
+        &__image{
+            width: 250px;
+            @include mixin.mediumDevice{
+                display: none;                
+            }
+        }
+        &__content{
+            padding: 1.5rem;
+            color: var.$colorLight;
+        }
+        &__text{
+            @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+            line-height: 2;
+            margin-bottom: 1.3rem;
+        }
+        &__name{
+            @include mixin.text(1rem, var.$colorPrimary, var.$fontPrimary, left);
+            margin-bottom: 1rem;
+        }
+        &__position{
+            text-transform: uppercase;
+            @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+            opacity: 0.4;
+        }
+    }
+
+}

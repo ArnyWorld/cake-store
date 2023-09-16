@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arnaldo Muñoz" />
+    <meta name="keywords" content="HTML, CSS, SASS, JS" />
+    <title>Exquissitoo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+    <!--Preload-->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      as="font"
+      crossorigin
+    />
+    <link rel="preload" href="./build/css/app.css" as="style" />
+    <!--Prefetch-->
+    <link rel="prefetch" href="index.html" as="document" />
+    <link rel="prefetch" href="shop.html" as="document" />
+  </head>
+  <body>
+    <header class="header headerShop">
+      <div class="header__container">
+        <nav class="navigation">
+          <div class="navigation__logo">
+            <a href="index.html" class="linkLogo">
+              <img
+                src="./build/img/logoWhite-min.png"
+                class="linkLogo__image"
+                alt="Logo Cake Store"
+              />
+              Exquissitoo
+            </a>
+          </div>
+          <i class="fa-solid fa-bars-staggered navigation__icon"></i>
+          <div class="navigation__group">
+            <ul class="navigation__links">
+              <li class="navigation__list">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__list">
+                <a
+                  href="shop.html"
+                  class="navigation__link navigation__link--active"
+                  >Shop</a
+                >
+              </li>
+              <li class="navigation__list">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__list">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+            <div class="navigation__networks">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__content">
+          <div class="header__description">
+            <h3 class="header__text">Welcome to</h3>
+            <h1 class="header__title">Shop</h1>
+          </div>
+          <!-- <img src="img/HeaderNew-min.png" class="header__image" alt=""> -->
+        </div>
+      </div>
+      <!--container-->
+    </header>
+
+    <main class="mainShop">
+      <div class="container">
+        <h2 class="subtitle mainShop__title">Our Products</h2>
+        <div class="productsContainer bestSeller">
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_1-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Musk Buster Cake</h4>
+            <p class="bestSeller__price">$7.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_2-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Musk Buster Cake</h4>
+            <p class="bestSeller__price">$15.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_3-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">bakery Tiramisu cakerie</h4>
+            <p class="bestSeller__price">$7.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_4-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Triple chocolate donut</h4>
+            <p class="bestSeller__price">$15.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_5-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Cake</h4>
+            <p class="bestSeller__price">$7.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_6-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Chocolate Cake</h4>
+            <p class="bestSeller__price">$15.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_8-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Cupcake with strawberry</h4>
+            <p class="bestSeller__price">$7.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_9-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">variety cake</h4>
+            <p class="bestSeller__price">$15.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_10-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Cake Coco</h4>
+            <p class="bestSeller__price">$7.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_11-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Chocolate cake</h4>
+            <p class="bestSeller__price">$13.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_12-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Chocolate Cake</h4>
+            <p class="bestSeller__price">$8.00</p>
+          </div>
+          <div class="bestSeller__product">
+            <img
+              src="./build/img/cake_13-min.png"
+              alt=""
+              class="bestSeller__image"
+            />
+            <h4 class="bestSeller__title">Milk Cake</h4>
+            <p class="bestSeller__price">$17.00</p>
+          </div>
+        </div>
+        <!--productsContainer-->
+      </div>
+      <div class="specialProducts">
+        <div class="container specialContainer">
+          <h2 class="specialContainer__title">Special Products</h2>
+          <p class="specialContainer__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            eligendi porro aliquam, accusamus aliquid adipisci iusto
+            perspiciatis explicabo doloremque facilis aperiam commodi optio
+            error quae voluptates cupiditate veniam inventore. Accusantium?
+            Architecto illum sit expedita quasi, error dolor quibusdam ea
+            doloremque consequatur distinctio dolores eaque ipsum tenetur,
+            voluptas modi animi officia.
+          </p>
+          <div class="specialContainer__form">
+            <input
+              type="text"
+              class="specialContainer__message"
+              placeholder="Write us now"
+            />
+            <a href="" class="specialContainer__link">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--specialProducts-->
+
+      <div class="container cakesFamily">
+        <section
+          id="image-carousel"
+          class="splide"
+          aria-label="Beautiful Images"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake1-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 1</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake2-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 2</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake3-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 3</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake4-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 4</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake5-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 5</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+              <li class="cakesFamily__cake splide__slide">
+                <img
+                  src="./build/img/cake6-min.png"
+                  class="cakesFamily__image"
+                  alt=""
+                />
+                <h3 class="cakesFamily__title">Special 6</h3>
+                <p class="cakesFamily__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur eveniet harum minima ut natus!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!--cakesFamily-->
+      <div class="galleryShop">
+        <a
+          href="./build/img/gallery1.jpg"
+          class="galleryShop__link"
+          data-lightbox="image-1"
+          data-title="My cakes"
+        >
+          <img
+            src="./build/img/gallery1.jpg"
+            class="galleryShop__image"
+            alt="Image"
+          />
+        </a>
+        <a
+          href="./build/img/gallery2.jpg"
+          class="galleryShop__link"
+          data-lightbox="image-2"
+          data-title="My cakes"
+        >
+          <img
+            src="./build/img/gallery2.jpg"
+            class="galleryShop__image"
+            alt="Image"
+          />
+        </a>
+        <a
+          href="./build/img/gallery4.jpg"
+          class="galleryShop__link"
+          data-lightbox="image-3"
+          data-title="My cakes"
+        >
+          <img
+            src="./build/img/gallery4.jpg"
+            class="galleryShop__image"
+            alt="Image"
+          />
+        </a>
+
+        <a
+          href="./build/img/gallery6.jpg"
+          class="galleryShop__link"
+          data-lightbox="image-4"
+          data-title="My cakes"
+        >
+          <img
+            src="./build/img/gallery6.jpg"
+            class="galleryShop__image"
+            alt="Image"
+          />
+        </a>
+
+        <a
+          href="./build/img/gallery7.jpg"
+          class="galleryShop__link"
+          data-lightbox="image-5"
+          data-title="My cakes"
+        >
+          <img
+            src="./build/img/gallery7.jpg"
+            class="galleryShop__image"
+            alt="Image"
+          />
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerContainer">
+        <p class="copy">Exquissitoo copyright - 2023</p>
+        <nav class="footerNav">
+          <a href="index.html" class="footerNav__link">Home</a>
+          <a href="shop.html" class="footerNav__link">Shop</a>
+          <a href="about.html" class="footerNav__link">About</a>
+          <a href="contact.html" class="footerNav__link">Contact</a>
+        </nav>
+        <div class="footer__networks">
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="./build/js/global.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
+      integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+      integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var splide = new Splide(".splide");
+        // splide.mount();
+        // let splide = new Splide(".splide", {
+        //   autoWidth: true,
+        //   focus: 0,
+        //   omitEnd: true,
+        // });
+        // splide.mount();
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoHeight: true,
+          focus: "center",
+          autoWidth: true,
+        });
+
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>

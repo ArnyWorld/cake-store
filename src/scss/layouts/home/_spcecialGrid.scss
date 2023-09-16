@@ -1,0 +1,39 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.gridSpecial{
+    margin-bottom: 4rem;
+    &__product{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &__content{
+        background-color: var.$colorDark2;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 6rem;
+        @include mixin.mediumDevice{
+            width: 100%;
+            padding: 4rem 2rem;
+        }
+    }
+    &__image{
+        width: 50%;
+        @include mixin.mediumDevice{
+            display: none;
+        }
+    }
+    &__title{
+        color: var.$colorLight;
+        margin-bottom: 2rem;
+        font-family: var.$fontPrimary;
+    }
+    &__text{
+        @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, center);
+        line-height: 2;
+    }
+}

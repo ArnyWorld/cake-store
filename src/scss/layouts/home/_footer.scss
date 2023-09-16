@@ -1,0 +1,41 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.footer{
+    background-color: var.$colorBlack;
+    padding: 1.5rem 0;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    @include mixin.littleDevice{
+        justify-content: center;
+    }
+}
+
+.copy{
+    @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+    font-weight: bold;
+}
+.footerNav{
+    @include mixin.mediumDevice{
+        display: none;                
+    }
+    &__link{
+        @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+        margin-right: 1rem;
+    }
+
+}
+.footer__network{
+    @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+    margin-right: 1.5rem;
+    i{
+        font-size: 1.2rem;
+    }
+    @include mixin.littleDevice{
+        display: none;
+    }   
+}

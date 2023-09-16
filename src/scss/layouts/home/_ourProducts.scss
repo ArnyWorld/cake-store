@@ -1,0 +1,100 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+// ourProducts
+.mainHome{
+    .subtitle{
+        @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, center);
+        margin-bottom: 2rem;   
+    }
+    .productSection{
+        padding: 3rem 0;
+      
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        @include mixin.mediumDevice{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mixin.littleDevice{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        // display: flex;
+        // justify-content: space-between;
+        .product{
+            // width: 32%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3.5rem 2.3rem;
+            transition: transform .5s ease;
+
+            &:nth-child(1){
+                background: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.70)), url(../img/fruitSalad.jpg);
+                background-size: cover;
+                background-position: center;
+                @include mixin.mediumDevice{
+                    grid-column: 1 / 2;
+                }
+                @include mixin.littleDevice{
+                    grid-column: auto;
+                }
+            }
+            &:nth-child(2){
+                background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.70)), url(../img/cakes.jpg);
+                background-size: cover;
+                background-position: center;
+                @include mixin.mediumDevice{
+                    grid-column: 2 / 3;
+                }
+                @include mixin.littleDevice{
+                    grid-column: auto;
+                }
+            }
+            &:nth-child(3){
+                background-image: linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.70)), url(../img/donut.jpg);
+                background-size: cover;
+                background-position: center;
+                @include mixin.mediumDevice{
+                    grid-column: 1 / 3;
+                }
+                @include mixin.littleDevice{
+                    grid-column: auto;
+                }
+            }
+            &:hover{
+                transform: scale(1.03);
+            }
+            &__image{
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &__title{
+                display: inline;
+                @include mixin.text(1.3rem, var.$colorLight, var.$fontPrimary, left);
+                margin-bottom: 2rem;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    content: '';
+                    width: 10%;
+                    height: 5px;
+                    background-color: var.$colorPrimary;
+                }                               
+            }
+            &__text{
+                @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, center);
+                line-height: 2;
+            }
+        }
+    }
+
+}

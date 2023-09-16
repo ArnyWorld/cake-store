@@ -1,0 +1,40 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.welcomeParallax{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+    @include mixin.mediumDevice{
+        &__image{
+            display: none;
+         }
+    }
+    &__content{
+        border:1px solid var.$colorPrimary;
+        border-radius: 0.6rem;
+        background-color: var.$colorDark2;
+        padding: 4rem;
+        position: relative;
+        left: -5rem;
+        @include mixin.mediumDevice{
+            left: 0rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include mixin.littleDevice{
+            padding: 2rem
+        }
+    }
+    &__title{
+            @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, left);
+            margin-bottom: 2rem;   
+    }
+    &__text{
+        @include mixin.text(1rem, var.$colorLight, var.$fontSecondary, left);
+        line-height: 2;
+        margin-bottom: 1rem;
+    }
+}

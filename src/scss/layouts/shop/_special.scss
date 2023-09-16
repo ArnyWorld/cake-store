@@ -1,0 +1,44 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.specialProducts{
+    //@include mixin.background(url(../img/banner6-min.jpg), auto);    
+    background:radial-gradient(circle, rgba(0,0,0,.2),rgba(0,0,0,.1)), url(../img/banner6-min.jpg);
+    margin-bottom:2.5rem;
+    background-position: center;
+    padding: 5rem 0;
+}
+
+.specialContainer{
+    &__title{
+        @include mixin.text(2rem, var.$colorPrimary, var.$fontPrimary, center);
+        margin-bottom: 2rem;
+    }
+    &__text{
+        @include mixin.text(1.2rem, var.$colorLight, var.$fontSecondary, center);
+        margin-bottom: 2rem;
+        line-height: 2;
+    }
+      &__form{
+            background-color:var.$colorLight;
+            padding: 0.1rem;
+            display: flex;
+            align-items: center;
+            width: 400px;
+            margin: 0 auto;
+        }
+        &__message{
+            padding: 1rem;
+            border: none;
+            width: 100%;
+        }
+        &__link{
+            padding: 0.8rem;
+            background-color: var.$colorDark;
+            color: var.$colorLight;
+            i{
+                font-size: 1.6rem;
+            }
+        }
+}

@@ -1,0 +1,51 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+.bestSeller{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    @include mixin.mediumDevice{
+        justify-content: space-between;    
+    }
+    &__product{
+        border: 1px solid var.$colorPrimary;
+        width: 49%;
+        padding: 1.2rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var.$colorLight;
+        @include mixin.mediumDevice{
+            flex-direction: column;
+            width: 48%;
+        }
+        @include mixin.mediumDevice{
+            width: 46%;
+        }
+    }
+    &__image{
+        width: 120px;
+        @include mixin.mediumDevice{
+            margin-bottom: 1.2rem;;
+        }
+    }
+    &__title{
+        text-transform: uppercase;
+        font-family: var.$fontPrimary;
+        @include mixin.mediumDevice{
+            margin-bottom: 1rem;
+        }
+    }
+    &__price{
+        font-weight: bold;
+        @include mixin.mediumDevice{
+         text-align: right;
+         align-self: flex-end;
+        }
+    } 
+}

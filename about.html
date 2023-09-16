@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arnaldo Muñoz" />
+    <meta name="keywords" content="HTML, CSS, SASS, JS" />
+    <title>Exquissitoo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+
+    <!--Preload-->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:wght@300;400&display=swap"
+      as="font"
+      crossorigin
+    />
+    <link rel="preload" href="./build/css/app.css" as="style" />
+    <!--Prefetch-->
+    <link rel="prefetch" href="index.html" as="document" />
+    <link rel="prefetch" href="shop.html" as="document" />
+  </head>
+  <body>
+    <header class="header headerAbout">
+      <div class="header__container">
+        <nav class="navigation">
+          <div class="navigation__logo">
+            <a href="index.html" class="linkLogo">
+              <img
+                src="./build/img/logoWhite-min.png"
+                class="linkLogo__image"
+                alt="Logo Cake Store"
+              />
+              Exquissitoo
+            </a>
+          </div>
+          <i class="fa-solid fa-bars-staggered navigation__icon"></i>
+          <div class="navigation__group">
+            <ul class="navigation__links">
+              <li class="navigation__list">
+                <a href="index.html" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__list">
+                <a href="shop.html" class="navigation__link">Shop</a>
+              </li>
+              <li class="navigation__list">
+                <a
+                  href="about.html"
+                  class="navigation__link navigation__link--active"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__list">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+            <div class="navigation__networks">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          <!--navigation__group-->
+        </nav>
+        <div class="header__content">
+          <div class="header__description">
+            <h3 class="header__text">Welcome to</h3>
+            <h1 class="header__title">About</h1>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </header>
+
+    <main class="mainAbout">
+      <div class="welcomeParallax">
+        <img
+          src="./build/img/gallery7.jpg"
+          class="welcomeParallax__image"
+          alt="Welcome About"
+        />
+        <div class="welcomeParallax__content">
+          <h3 class="welcomeParallax__title">Welcome to our family</h3>
+          <p class="welcomeParallax__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cum
+            vitae magnam? Delectus maiores porro reprehenderit ipsa, nemo esse,
+            architecto consectetur ipsam voluptates distinctio perspiciatis
+            repudiandae, natus alias, dolores maxime nihil consequuntur! Maiores
+            excepturi voluptatibus illum laudantium cum odit quae eligendi
+            fugiat dolorem.
+          </p>
+          <p class="welcomeParallax__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            illum blanditiis ullam cum amet sunt, totam quidem fugiat
+            reprehenderit eligendi odit cumque voluptates quibusdam at
+            necessitatibus. Voluptatibus voluptates unde iure.
+          </p>
+        </div>
+      </div>
+      <div class="container ourTeam">
+        <h2 class="subtitle">Our Team</h2>
+        <p class="ourTeam__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sequi
+          optio. Neque corrupti nobis eum suscipit culpa, libero soluta, minima
+          aspernatur doloremque fuga, perferendis impedit beatae optio
+          reprehenderit itaque? In?
+        </p>
+        <div class="peopleContainer">
+          <div class="peopleContainer__people">
+            <img
+              src="./build/img/people1_medium-min.jpg"
+              class="peopleContainer__image"
+              alt=""
+            />
+            <h3 class="peopleContainer__name">Brooklin Simmons</h3>
+            <p class="peopleContainer__detail">3 Year Experience</p>
+          </div>
+          <div class="peopleContainer__people">
+            <img
+              src="./build/img/people2_medium-min.jpg"
+              class="peopleContainer__image"
+              alt=""
+            />
+            <h3 class="peopleContainer__name">Leslie Alexandra</h3>
+            <p class="peopleContainer__detail">1 Year Experience</p>
+          </div>
+          <div class="peopleContainer__people">
+            <img
+              src="./build/img/people3_medium-min.jpg"
+              class="peopleContainer__image"
+              alt=""
+            />
+            <h3 class="peopleContainer__name">Robert Fox</h3>
+            <p class="peopleContainer__detail">5 Year Experience</p>
+          </div>
+          <div class="peopleContainer__people">
+            <img
+              src="./build/img/people4_medium-min.jpg"
+              class="peopleContainer__image"
+              alt=""
+            />
+            <h3 class="peopleContainer__name">Savannah Nguyen</h3>
+            <p class="peopleContainer__detail">2 Year Experience</p>
+          </div>
+        </div>
+      </div>
+      <!--ourTeam-->
+      <div class="container storesContainer">
+        <div class="storesContainer__store">
+          <h3 class="storesContainer__title">first store</h3>
+          <p class="storesContainer__text">
+            Westheimer Rd. Santa Ana, Illinois 85486
+          </p>
+          <p class="storesContainer__text">
+            Monday to Saturday: 09:00 am to 20:00 pm
+          </p>
+          <p class="storesContainer__text">firstStore@gmail.com</p>
+        </div>
+
+        <div class="storesContainer__store">
+          <h3 class="storesContainer__title">Second store</h3>
+          <p class="storesContainer__text">Parker Rd. Allentown, New Mexico</p>
+          <p class="storesContainer__text">
+            Monday to Saturday: 09:00 am to 21:00 pm
+          </p>
+          <p class="storesContainer__text">secondStore@gmail.com</p>
+        </div>
+
+        <div class="storesContainer__store">
+          <h3 class="storesContainer__title">third store</h3>
+          <p class="storesContainer__text">
+            Thornridge Cir. Syracuse, Connecticut
+          </p>
+          <p class="storesContainer__text">
+            Monday to Saturday: 09:00 am to 18:00 pm
+          </p>
+          <p class="storesContainer__text">thirdStore@gmail.com</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerContainer">
+        <p class="copy">Exquissitoo copyright - 2023</p>
+        <nav class="footerNav">
+          <a href="index.html" class="footerNav__link">Home</a>
+          <a href="shop.html" class="footerNav__link">Shop</a>
+          <a href="about.html" class="footerNav__link">About</a>
+          <a href="contact.html" class="footerNav__link">Contact</a>
+        </nav>
+        <div class="footer__networks">
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="footer__network">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="./build/js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var splide = new Splide(".splide");
+        // splide.mount();
+        // let splide = new Splide(".splide", {
+        //   autoWidth: true,
+        //   focus: 0,
+        //   omitEnd: true,
+        // });
+        // splide.mount();
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoHeight: true,
+          focus: "center",
+          autoWidth: true,
+        });
+
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>

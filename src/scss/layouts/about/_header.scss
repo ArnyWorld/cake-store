@@ -1,0 +1,15 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+/***ABOUT***/
+.headerAbout{
+    @include mixin.background(url(../img/banner5-min.jpg), 70vh);
+    margin-bottom:2.5rem;
+    background-position: center;
+    .header__content{
+        @include mixin.littleDevice{
+            align-items:center;
+        }
+    }
+}

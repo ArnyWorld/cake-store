@@ -1,0 +1,35 @@
+@use '../base/variables' as var;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style-type:none;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var.$colorDark;
+}
+.overflow{
+    overflow: hidden;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.goTop {
+    font-size: 3rem;
+    color: var.$colorPrimary;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2000!important;
+    cursor: pointer;
+    display: none;
+  }
+  

@@ -1,0 +1,44 @@
+@use '../../base/global';
+@use '../../base/mixins' as mixin;
+@use '../../base/variables' as var;
+
+// secialCakes
+.mainHome{
+
+    .special{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+        @include mixin.mediumDevice{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            @include mixin.mediumDevice{
+                display: none;
+            }
+        }
+        &__right{
+            background-color: var.$colorLight;
+            padding: 5rem 3rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title{
+            @include mixin.text(2rem, var.$colorDark, var.$fontPrimary, left);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase; 
+        }
+        &__text{
+            @include mixin.text(1rem, var.$colorText, var.$fontSecondary, left);
+            line-height: 2;
+            margin-bottom: 1rem;
+        }
+    }   
+
+}
